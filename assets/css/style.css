@@ -1,0 +1,616 @@
+/*----General----*/
+/* * {
+    border: 2px solid red;
+}*/
+
+body {
+    width: 960px;
+    position: relative;
+    background-image: url("../images/debut_light.png");
+}
+
+#headerName {
+    float: left;
+	color: lightYellow;
+    font-weight: bold;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 24px;
+	background-color: grey;
+	padding: 20px;
+	margin:0 0 0 125px;
+    width: 250px;
+    border: 5px solid silver;
+    white-space: nowrap;
+}
+
+.navLinks {
+    float: right;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    color: grey;
+    background-color: white;
+    margin-top: 40px;
+    padding: 0px 10px 0px 10px;
+}
+
+.contentHead {
+    position: relative;
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid lightYellow;
+}
+
+#contactLink {
+    margin-right: 110px;
+}
+
+#portfolioLink {
+    border-right: 5px solid grey;
+}
+
+#aboutLink {
+    border-right: 5px solid grey;
+}
+
+#connectWithMe, #portConnectWithMe {
+    width: 200px;
+    height: 100px;
+    margin:0;
+    padding: 0 20px 30px 20px;
+    background-image: url("../images/old_moon.png");
+    border: 1px solid gold;
+    position: absolute;
+    right: 105px;
+    top: 50px;
+}
+
+#connectHead, #portConnectHead {
+    position: relative;
+    text-align:center;
+    top: 0;
+    margin: 0;
+    padding: 0px 0px 5px 0px;
+    border-bottom: 2px solid lightYellow;
+}
+
+#linkedIn {
+    width: 70px;
+    height: 70px;
+    margin: 0;
+    position: absolute;
+    left: 8px;
+    bottom: 15px;
+    /*border: 2px solid lightYellow;*/
+}
+
+#gitHub {
+    width: 70px;
+    height: 70px;
+    margin: 0;
+    position: absolute;
+    left: 85px;
+    bottom: 15px;
+}
+
+#stackOverflow {
+    width: 69px;
+    height: 69px;
+    margin: 0;
+    position: absolute;
+    left: 163px;
+    bottom: 15px;
+    border: 1px solid orange;
+}
+
+footer {
+    clear: both;
+    padding:20px;
+    text-align: center;
+    margin-top: 0px;
+    background-color: grey;
+    border-top: 2px solid lightYellow;
+}
+
+/*----About and Contact Page----*/
+#large {
+    clear: both;
+    position: relative;
+    background-image: url("../images/stardust.png");
+    font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: black;
+    width: 960px;
+    margin: 0;
+    height: 450px;
+}
+
+#aboutContentArea, #contentArea {
+    width: 425px;
+    height: 335px;
+    margin: 0;
+    padding: 2%;
+    background-image: url("../images/old_moon.png");
+    border: 1px solid gold;
+    position: absolute;
+    left: 75px;
+    top: 50px;
+}
+
+#aboutPhoto {
+width: 100px; 
+height: 100px; 
+float: left; 
+margin-right: 10px
+}
+
+#nameBox {
+  width: 300px;
+}
+
+#emailBox {
+  width: 300px;
+}
+
+#messageBox {
+  width: 300px;
+  height: 100px;
+}
+
+/*----Porfolio Page----*/
+#portLarge {
+    clear: both;
+    position: relative;
+    background-image: url("../images/stardust.png");
+    font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: black;
+    width: 100%;
+    margin: 0;
+    height: 600px;
+}
+
+#portArea {
+    width: 475px;
+    height: 475px;
+    margin: 0;
+    padding: 10px;
+    background-image: url("../images/old_moon.png");
+    border: 1px solid gold;
+    position: absolute;
+    left: 75px;
+    top: 50px;
+}
+
+.port {
+    width:210px;
+    height:125px;
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.imageLabelGroup1 {
+    width: 475px;
+    /*border: 1px solid gold;*/
+    margin: 0;
+    padding: 10px;
+    position: absolute;
+    left: 76px;
+    top: 185px;
+    z-index: 1;
+}
+
+.imageLabelGroup2 {
+    width: 475px;
+    /*border: 1px solid gold;*/
+    margin: 0;
+    padding: 10px;
+    position: absolute;
+    left: 76px;
+    top: 330px;
+    z-index: 1;
+}
+
+.imageLabelGroup3 {
+    width: 475px;
+   /*border: 1px solid gold;*/
+    margin: 0;
+    padding: 10px;
+    position: absolute;
+    left: 76px;
+    top: 475px;
+    z-index: 1;
+}
+
+.imageLabels {
+    z-index: 2;
+    width:210px;
+    height:25px;
+    float: left;
+    opacity: .75;
+    margin: 0px 0px 0px 20px;
+    padding: 5px 0px 5px 0px;
+    background-color: grey; 
+    text-align: center;
+}
+
+/*Media Queries*/
+
+/*Page 980px*/
+@media screen and (max-width: 980px) {
+    
+   body {
+    width: 885px;
+   }
+
+   #headerName {
+    position: relative;
+    left: 60px  ;
+   }
+
+   #aboutPhoto {
+    float: none;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: 50px;
+   }
+
+   #contentArea {
+    height: 550px;
+    width: 300px;
+    left: 175px;
+   }
+
+   #large {
+    height: 680px;
+    width: 950px;
+   }
+
+   #portArea {
+    height: 915px;
+    width: 300px;
+    left: 175px;
+   }
+
+   #portLarge {
+    height: 1000px;
+    width: 950px;
+   }
+
+   .port {
+    width:210px;
+    height:125px;
+    float: left;
+    margin-left: 45px;
+    margin-bottom: 20px;
+  }
+
+  .imageLabelGroup1 {
+      width: 210px;
+      /*border: 1px solid gold;*/
+      margin: 0;
+      padding: 10px;
+      position: absolute;
+      left: 201px;
+      top: 85px;
+      z-index: 1;
+  }
+
+  .imageLabelGroup2 {
+    width: 210px;
+    /*border: 1px solid gold;*/
+    margin: 0;
+    padding: 10px;
+    position: absolute;
+    left: 201px;
+    top: 375px;
+    z-index: 1;
+}
+
+.imageLabelGroup3 {
+    width: 210px;
+   /*border: 1px solid gold;*/
+    margin: 0;
+    padding: 10px;
+    position: absolute;
+    left: 201px;
+    top: 665px;
+    z-index: 1;
+}
+
+  .imageLabels {
+    z-index: 2;
+    width:210px;
+    height:25px;
+    float: left;
+    opacity: .75;
+    margin: 100px 0px 10px 20px;
+    padding: 5px 0px 5px 0px;
+    background-color: grey; 
+    text-align: center;
+}
+
+   #connectWithMe, #portConnectWithMe {
+    right: 140px;
+    top: 50px;
+   }
+
+   #contactLink {
+    margin-right: 80px;
+   }
+
+   footer {
+    width: 910px;
+   }
+
+  #nameBox {
+    width: 300px;
+  }
+
+  #emailBox {
+    width: 300px;
+  }
+
+  #messageBox {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+   body {
+    width: 768px;
+   }
+
+   #aboutPhoto {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    left: 0px;
+    float: left;
+   }
+
+   #contentArea {
+    height: 275px;
+    width: 650px;
+    left: 40px;
+   }
+
+   #large {
+    height: 550px;
+    width: 760px;
+   }
+
+   #portLarge {
+    height: 1200px;
+    width: 760px;
+   }
+
+    #portArea {
+    height: 915px;
+    width: 300px;
+    left: 200px;
+   }
+
+   #connectWithMe {
+    top: 375px;
+    height: 125px;
+    width: 650px;
+    left: 40px;
+    padding: 2%;
+   }
+
+   #portConnectWithMe {
+    top: 1000px;
+    height: 125px;
+    width: 650px;
+    left: 40px;
+    padding: 2%;
+   }
+
+   #headerName{
+    position: relative;
+    left: -80px;
+   }
+
+   #contactLink {
+    margin-right: 80px;
+   }
+
+   #connectHead, #portConnectHead {
+    text-align: left;
+   }
+
+     .imageLabelGroup1 {
+      width: 210px;
+      /*border: 1px solid gold;*/
+      margin: 0;
+      padding: 10px;
+      position: absolute;
+      left: 226px;
+      top: 85px;
+      z-index: 1;
+  }
+
+  .imageLabelGroup2 {
+    width: 210px;
+    /*border: 1px solid gold;*/
+    margin: 0;
+    padding: 10px;
+    position: absolute;
+    left: 226px;
+    top: 375px;
+    z-index: 1;
+}
+
+.imageLabelGroup3 {
+    width: 210px;
+   /*border: 1px solid gold;*/
+    margin: 0;
+    padding: 10px;
+    position: absolute;
+    left: 226px;
+    top: 665px;
+    z-index: 1;
+}
+
+   footer {
+    width: 720px;
+   }
+
+  #nameBox {
+    width: 600px;
+  }
+
+  #emailBox {
+    width: 600px;
+  }
+
+  #messageBox {
+    width: 600px;
+    height: 75px;
+  }
+    
+}
+
+@media screen and (max-width: 640px) {
+
+   body {
+    width: 640px;
+   }
+
+   #headerName {
+    width: 580px;
+    margin: 0;
+    text-align: center;
+    left:0;
+   }
+
+   #aboutPhoto {
+    width: 350px;
+    height: 350px;
+    position: relative;
+    left: 100px;
+    float: none;
+   }
+
+   #contentArea {
+    height: 620px;
+    width: 580px;
+    left: 10px;
+   }
+
+   #portArea {
+    height: 915px;
+    width: 300px;
+    left: 150px;
+   }
+
+  #portLarge {
+    height: 1200px;
+    width: 630px;
+   }
+
+   #large {
+    height: 900px;
+    width: 630px;
+   }
+
+   #connectWithMe {
+    top: 725px;
+    height: 125px;
+    width: 580px;
+    left: 10px;
+    padding: 2%;
+   }
+
+   .navLinks {
+    float: none;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    color: grey;
+    background-color: white;
+    margin-top: 0px;
+    padding: 0px 80px 0px 75px;
+    height: 80px;
+   }
+
+   #contactLink {
+     margin: 0px;
+     height: 40px;
+   }
+
+   #portfolioLink {
+     border-right: none;
+     height: 40px;
+   }
+
+   #aboutLink {
+     border-right: none;
+     height: 40px;
+   }
+
+   #connectHead {
+    text-align: left;
+   }
+
+   #portConnectWithMe {
+    top: 1000px;
+    height: 125px;
+    width: 580px;
+    left: 10px;
+    padding: 2%;
+   }
+
+        .imageLabelGroup1 {
+      width: 210px;
+      /*border: 1px solid gold;*/
+      margin: 0;
+      padding: 10px;
+      position: absolute;
+      left: 176px;
+      top: 85px;
+      z-index: 1;
+  }
+
+  .imageLabelGroup2 {
+    width: 210px;
+    /*border: 1px solid gold;*/
+    margin: 0;
+    padding: 10px;
+    position: absolute;
+    left: 176px;
+    top: 375px;
+    z-index: 1;
+}
+
+.imageLabelGroup3 {
+    width: 210px;
+   /*border: 1px solid gold;*/
+    margin: 0;
+    padding: 10px;
+    position: absolute;
+    left: 176px;
+    top: 665px;
+    z-index: 1;
+}
+
+   footer {
+    width: 590px;
+   }
+
+     #nameBox {
+    width: 500px;
+  }
+
+  #emailBox {
+    width: 500px;
+  }
+
+  #messageBox {
+    width: 500px;
+    height: 400px;
+  }
+    
+}
